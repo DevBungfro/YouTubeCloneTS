@@ -1,0 +1,32 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevBungfro/YouTubeCloneTS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevBungfro/YouTubeCloneTS/issues"
+  },
+  "homepage": "https://github.com/DevBungfro/YouTubeCloneTS#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "lambert-server": "^1.2.12",
+    "mongoose": "^6.8.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typeorm": "^0.3.11",
+    "typescript": "^4.9.4"
+  }
+}
