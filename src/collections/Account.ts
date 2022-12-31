@@ -1,12 +1,12 @@
-lsimport { Collection, SubCollecti, ISubCollectionon } from 'fireorm';
+import { Collection, SubCollection, ISubCollection } from 'fireorm';
 import { Channel } from './Channel'
 
 @Collection()
-export class Todo {
+export class Account {
   id: string;
   username: string;
   email: string;
   
   @SubCollection(Channel)
-  channs?: ISubCollection<Channel>
+  channels?: ISubCollection<Channel>;
 }

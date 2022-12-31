@@ -1,5 +1,7 @@
 import  { config } from "dotenv"
-import { initializeApp } from "firebase/app";
+import firebase from 'firebase/app';
+import * as fireorm from 'fireorm';
+import 'firebase/firestore';
 
 config()
 
@@ -13,6 +15,6 @@ const firebaseConfig = {
   measurementId: "G-WN6S37NSX1"
 };
 
-export const app = initializeApp(firebaseConfig);
-    
+export const app = firebase.initializeApp(firebaseConfig);
+fireorm.initialize(firebase.firestore());   
   
